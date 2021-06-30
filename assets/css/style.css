@@ -1,0 +1,624 @@
+@font-face {
+    font-family: 'Sans-Pro';
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: 'Sans-Pro-Bold';
+    src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(0, 0, 0);
+    width: 10px;
+}
+
+::-webkit-scrollbar-button{
+   display: none;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #590022;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sans-Pro';
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #101010;
+}
+
+#logo{
+    width: 40%;
+    height: 100%;
+    padding-left: 5%;
+}
+#logo img{
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #590022;
+
+    color: rgb(235, 235, 235);
+    font-size: 22px;
+    width: 100%;
+
+    border-bottom: black 2px solid;
+    box-shadow: black 0px 5px ;
+    z-index: 2;
+}
+nav ul li a:after{
+    content: " ";
+    bottom: 0;
+    display: block;
+    height: 1.8px;
+    left: 50%;
+    position: absolute;
+    background: rgb(235, 235, 235);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+  nav ul li a{
+    position: relative;
+}
+
+#ul-nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#header{
+    width: 100%;
+    position: relative;
+}
+
+#header h1{
+    left: 50%;
+    top: 45%;
+    position: absolute;
+    z-index: 5;
+    font-family: 'Sans-Pro-Bold';
+    font-size: 160px;
+    transform: translate(-50%, -50%);
+    line-height: 0.9;
+    width: 80%;
+    text-align: center;
+}
+#header h1 img{
+    width: 400px;
+}
+
+#header #header-img{
+    filter: blur(1.5px);
+    background-size: contain;
+}
+
+#header p{
+    position: absolute;
+    z-index: 5;
+    right: 10;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    background-color: #630026f5;
+    padding: 1%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -2px;
+}
+
+#title2{
+    padding-left: 10%;
+    font-family: 'Sans-Pro-Bold';
+    
+}
+
+#section1{
+    background-color: #590022;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: #590022 0px -3px 3px;
+}
+
+
+
+.hr1{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 2px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#section-prov{
+    display: flex;
+    padding: 3%;
+    color: rgb(235, 235, 235);
+    padding-top: 4%;
+}
+
+#section-prov :first-child{
+    width: 50%;
+    text-align: center;
+}
+#section-prov div img{
+   margin-left: 10%;
+   border: rgb(235, 235, 235) 2px solid;
+   border-radius: 50px;
+}
+
+
+#section-prov :last-child{
+    width: 50%;
+    
+}
+#section-prov :last-child h2{
+    font-size: 70px;
+    font-family: 'Sans-Pro-Bold';
+    margin-left: 10%;
+}
+#section-prov :last-child p{
+    font-size: 25px;
+    text-indent: 15%;
+    margin-left: 10%;
+}
+
+
+
+#section2{
+    background-color: #fcfcfc;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: #590022 0px -3px 3px;
+}
+
+
+
+#hr2{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 2px;
+    border: none;
+    background-color: #590022;
+}
+
+#section-choix{
+    display: flex;
+    padding: 3%;
+    color: black;
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-right: 6%;
+}
+
+#section-choix :last-child{
+    width: 50%;
+    
+}
+#section-choix div img{
+   border: #590022 2px solid;
+   border-radius: 50px;
+}
+
+
+#section-choix :first-child{
+    width: 50%;
+    margin-left: 10%;
+    
+}
+#section-choix :first-child h2{
+    font-size: 70px;
+    font-family: 'Sans-Pro-Bold';
+    margin-left: 10%;
+}
+#section-choix :first-child p{
+    font-size: 25px;
+    text-indent: 15%;
+    margin-left: 10%;
+}
+
+footer{
+    background-color: rgb(7, 7, 7);
+    color:rgb(235, 235, 235)
+}
+
+#footer-title{
+    font-size: 30px;
+    display: flex;
+    gap: 5%;
+    width: 90%;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+
+#contact{
+    display: flex;
+}
+
+#contact-form{
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+#contact-form div{
+    padding: 1%;
+    align-items: center;
+    display: flex;
+}
+
+#contact-form div input{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    height: 30px;
+    margin: 1%;
+    font-size: 25px;
+    padding: 1%
+}
+
+#eMail{
+    width: 43%;
+}
+#Prenom{
+    width: 20%;
+}
+#Nom{
+    width: 20%;
+}
+
+#contact-info{
+    width: 50%;
+    font-size: 30px;
+    padding-top: 3%;
+    margin-left: 5%;
+}
+
+
+
+
+
+/* STOCK ------------------------------------------------------- */
+
+#section-stock-nav{
+    background-color: #590022;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: #590022 0px -3px 3px;
+}
+
+#ul-tri{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: #3a0016 1px solid;
+    margin-top: 2%;
+    justify-content: space-around;
+    background-color: #ffffff;
+    list-style: none;
+}
+
+#section-stock{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #b8003d;
+}
+
+.cards-list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.delete_button{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    border: solid 1px black;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.cards-li{
+    padding: 5px;
+}
+.cards-ul-geo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carte-vin{
+    background-color: #ffffff;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 400px;
+    padding: 30px;
+    margin: 20px;
+    position: relative;
+}
+
+.carte-vin ul{
+    list-style: none;
+}
+
+
+.carte-vin img{
+    display:block;
+    margin: auto;
+    width: 50%;
+    max-height: 300px;
+    padding: 50px;
+}
+.carte-vin h3{
+    text-align: center;
+    font-size: 30px;
+    border-top: 1px solid black;
+    padding-top: 30px;
+}
+.cards-ul-genre{
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-card{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid black;
+    position: relative;
+}
+
+#add-card-button{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border: solid 1px black;
+}
+#add-card-button p{
+    margin: auto;
+    font-size: 30px;
+}
+#add-card-button:hover{
+    background-color: #f2f2f2;
+}
+/* CREATION DE STOCK -------------------------------------------- */
+
+
+
+#section_stock_add{
+    padding: 5%;
+    background-color:#590022;
+    color: white;
+    font-size: 40px;
+    display: flex;
+}
+#section_stock_add_div{
+    margin: auto;
+    border: black 3px solid;
+    padding: 50px;
+    border-radius: 50px;
+}
+#section_stock_add h1{
+    font-size: 60px;
+}
+#form_stock_add{
+
+}
+#form_stock_add div{
+    padding: 5px;
+}
+
+/* CONNEXION ---------------------------------------------------- */
+
+
+#section-connexion{
+    background-color: #590022;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: #590022 0px -3px 3px;
+}
+#section_connexion_div{
+    padding: 5%;
+    background-color:#590022;
+    display: flex;
+    justify-content: center;
+    
+}
+#form_connect input{
+    height: 30px;
+    width: 100%;
+}
+#form_connect{
+    margin: auto;
+    border: black 3px solid;
+    padding: 50px;
+    border-radius: 50px;
+    width: 10%;
+    font-size: 30px;
+    color:white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE--------------------------------------------------------------------------- */
+
+@media screen and (max-width: 360px){
+    
+body{
+    max-width: 360px;
+}
+
+#logo{
+    width: 100%;
+}
+#logo img{
+    margin: auto;
+}
+
+#ul-nav{
+   display: none;
+}
+
+#header h1{
+    font-size: 60px;
+}
+#header h1 #logo-img{
+    width: 40%;
+}
+#header-img{
+    height: 300px;
+}
+
+
+#section-prov :last-child h2{
+    font-size: 50px;
+
+}
+#section-prov :last-child{
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+}
+#section-prov :last-child p{
+    margin: 0;
+}
+
+#section-prov-img{
+   display: none;
+}
+
+
+#section-choix :first-child h2{
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+
+}
+#section-choix :first-child{
+    width: 100%;
+    margin: auto;
+}
+#section-choix :first-child p{
+    margin: 0;
+    width: 100%;
+}
+
+#section-choix-img{
+   display: none;
+}
+
+
+
+
+
+#footer-title {
+    margin: 0;
+    width: 100%;
+}
+#footer-title :last-child{
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+#footer-title h2{
+    font-size: 35px;
+    
+    display: none;
+    
+    
+}
+#contact-form{
+    font-size: 15px;
+    display: none;
+   
+}
+#contact-form input{
+    width: 10%;
+}
+
+#contact-info{
+    width: 100%;
+    margin-top:20px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    
+}
+#contact-info h3{
+    font-size: 18px;
+    margin-right: 10px;
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+.carte-vin{
+    width: 200px;
+}
+#add-card{
+    width: 200px;
+}
+
+}
+
+
+
+
+
